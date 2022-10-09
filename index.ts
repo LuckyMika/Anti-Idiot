@@ -1,5 +1,5 @@
 import { Client, ActivityType } from "discord.js";
-import chalk from "chalk";
+// import chalk from "chalk";
 import config from "./config.json";
 import { readFileSync } from "fs";
 
@@ -12,7 +12,7 @@ const bot = new Client({
 });
 
 bot.once("ready", () => {
-    console.log(chalk.blueBright + "Bot ready!");
+    console.log("Bot ready!");
 });
 
 bot.login(secret);
